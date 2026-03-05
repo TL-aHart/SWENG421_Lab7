@@ -10,6 +10,11 @@ namespace SWENG421_Lab7
 
         public void Add(IEntity element)
         {
+            if (this.GetType() == element.GetType())
+            {
+                Console.WriteLine("Invalid, cannot add same entity to self");
+                return;
+            }
             component.Add(element); 
         }
 

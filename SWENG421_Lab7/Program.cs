@@ -4,6 +4,7 @@ class Program
 {
     public static void Main()
     {
+        //scenario 1
         Novel novel = new Novel();
         Page page1 = new Page();
         Column column1 = new Column();
@@ -11,7 +12,7 @@ class Program
         Frame frame1 = new Frame();
         LineOfText line1 = new LineOfText();
         LineOfText line2 = new LineOfText();
-        
+
         line1.Add(new Character('S'));
         line1.Add(new Character('W'));
         line1.Add(new Character('E'));
@@ -29,8 +30,8 @@ class Program
         page1.Add(frame1);
         novel.Add(page1);
 
-        //uncomment when completed
-        //Writer writer = new Writer();
-        //writer.View(novel);
+        //scenario 2
+        Writer writer = new Writer();
+        writer.View(novel);
     }
 }
